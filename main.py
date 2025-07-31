@@ -20,11 +20,7 @@ def displayCharLogA(chars):
         print(f"'{char}': {chars[char]}")
 
 def header(w):
-    print(f"============ BOOKBOT ============")
-    print(f"Analyzing book found at {sys.argv[1]}...")
-    print("----------- Word Count ----------")
-    print(f"Found {w} total words")
-    print("--------- Character Count -------")
+    print("")
 
 def footer():
     print(f"============= END ===============")
@@ -38,6 +34,11 @@ def main():
     charLog = countChars(fullTxt)
     
     header(wordTotal)
+    print(f"============ BOOKBOT ============")
+    print(f"Analyzing book found at {sys.argv[1]}...")
+    print("----------- Word Count ----------")
+    print(f"Found {wordTotal} total words")
+    print("--------- Character Count -------")
     createNest(charLog)
     footer()
 
