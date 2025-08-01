@@ -19,12 +19,6 @@ def displayCharLogA(chars):
     for char in chars:
         print(f"'{char}': {chars[char]}")
 
-def header(w):
-    print("")
-
-def footer():
-    pass
-
 def main():
     argCheck()
     fullTxt = getBookTxt(sys.argv[1])
@@ -33,7 +27,6 @@ def main():
     wordTotal = countWords(fullTxt)
     charLog = countChars(fullTxt)
     
-    header(wordTotal)
     print(f"============ BOOKBOT ============")
     print(f"Analyzing book found at {sys.argv[1]}...")
     print("----------- Word Count ----------")
