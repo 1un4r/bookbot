@@ -23,7 +23,7 @@ def header(w):
     print("")
 
 def footer():
-    print(f"============= END ===============")
+    pass
 
 def main():
     argCheck()
@@ -40,7 +40,7 @@ def main():
     print(f"Found {wordTotal} total words")
     print("--------- Character Count -------")
     createNest(charLog)
-    footer()
+    print(f"============= END ===============")
 
 
     
