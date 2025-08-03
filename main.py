@@ -34,6 +34,7 @@ def main():
     print("--------- Character Count -------")
     createNest(charLog)
     print(f"============= END ===============")
+    print(f"============= END ===============")
 
 
     
